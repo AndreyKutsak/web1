@@ -3,3 +3,27 @@
   padding: 0 10px;
   margin: 0 auto;
 }
+footer {
+  padding: 80px 0 88px;
+  background-color: #fff;
+}
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .container .logo {
+  font-family: "Big John", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: #323a45;
+  margin-bottom: 25px;
+}
+footer .container .copyr-desc {
+  font-family: "open-sans", sans-serif;
+  font-size: 14px;
+  color: #81868e;
+  margin-bottom: 35px;
+}
