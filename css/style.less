@@ -14,7 +14,7 @@
   font-family: @sourceSansPro;
   font-size: 20px;
   line-height: 12px;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: @gray300;
@@ -26,6 +26,16 @@
   font-weight: 400;
   letter-spacing: 0.05em;
   color: @gray200;
+}
+.icon {
+  background: @gray200;
+  padding: 16px 13px;
+  border-radius: 50%;
+  text-align: center;
+  transition: 0.3s;
+  &:hover {
+    background: @green200;
+  }
 }
 html {
   scroll-behavior: smooth;
@@ -147,7 +157,7 @@ body {
         width: 70%;
         h2 {
           .main-head;
-          padding: 30px 0 50px;
+          line-height: 100px;
         }
         p {
           .main-desc;
@@ -180,6 +190,90 @@ body {
         width: auto;
         display: block;
         margin: 0 auto;
+      }
+    }
+  }
+  .details {
+    background: @gray;
+    .content {
+      .container;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .block1 {
+        width: 40%;
+        padding: 60px 0;
+        text-align: center;
+        h2 {
+          .main-head;
+          line-height: 80px;
+        }
+        p {
+          .main-desc;
+          padding-bottom: 60px
+        }
+        .icons span {
+          .icon;
+          margin: 0 15px;
+          a {
+            vertical-align: middle;
+          }
+        }
+      }
+      .block2 {
+        display: flex;
+        justify-content: flex-start;
+        padding:0 60px 100px;
+        div {
+          &:nth-child(1){
+            flex-basis: 45%;
+            .wrap {
+              width: 70%;
+              display: block;
+              margin: 0 auto;
+              h3 {
+                font-family: @openSans;
+                font-size: 20px;
+                font-weight: 400;
+                letter-spacing: 0.04em;
+                color: @gray250;
+                margin-bottom: 40px
+              }
+              p {
+                .main-desc;
+                font-size: 16px;
+                line-height: 28px;
+                span {
+                  &:nth-child(1) {
+                    color: @green200;
+                    font-weight: 700;
+                  }
+                  &:nth-child(2) {
+                    color: @gray350;
+                    font-weight: 700;
+                  }
+                }
+              }
+            }
+          }
+          &:nth-child(2){
+            flex-basis: 55%;
+            p {
+              .main-desc;
+              padding-top: 60px;
+              span {
+                &:nth-child(1), &:nth-child(3) {
+                  color: @gray350;
+                  font-weight: 800;
+                }
+                &:nth-child(2) {
+                  color: @green200;
+                  font-weight: 800;
+                }
+              }
+            }
+          }  
+        }
       }
     }
   }
