@@ -132,7 +132,56 @@ body {
         }
       }
     }
-    
+  }
+  .aboutUs {
+    .container;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 10px 60px;
+    background: @white;
+    .content {
+      flex-basis: 60%;
+      display: flex;
+      justify-content: end;
+      .wrap {
+        width: 70%;
+        h2 {
+          .main-head;
+          padding: 30px 0 50px;
+        }
+        p {
+          .main-desc;
+        }
+        .btn {
+          padding: 40px 0;
+          a {
+            text-decoration: none;
+            font-family: @openSans;
+            font-size: 16px;
+            line-height: 12px;
+            font-weight: 400;
+            color: @gray300;
+            padding: 8px 30px;
+            border: 1px solid @gray300;
+            border-radius: 18px;
+            &:hover {
+              background: @green200;
+              border: none;
+              color: @white;
+            }
+          }
+        }
+      }
+    }
+    .ipad {
+      flex-basis: 40%;
+      img {
+        height: 100%;
+        width: auto;
+        display: block;
+        margin: 0 auto;
+      }
+    }
   }
 }
   

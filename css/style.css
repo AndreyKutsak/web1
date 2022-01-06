@@ -219,3 +219,66 @@ body header .header .arrow a i {
 body header .header .arrow:hover {
   background: #19bd9a;
 }
+body .aboutUs {
+  max-width: 1170px;
+  padding: 0 10px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 10px 60px;
+  background: #ffffff;
+}
+body .aboutUs .content {
+  flex-basis: 60%;
+  display: flex;
+  justify-content: end;
+}
+body .aboutUs .content .wrap {
+  width: 70%;
+}
+body .aboutUs .content .wrap h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  line-height: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #333b46;
+  padding: 30px 0 50px;
+}
+body .aboutUs .content .wrap p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #81868e;
+}
+body .aboutUs .content .wrap .btn {
+  padding: 40px 0;
+}
+body .aboutUs .content .wrap .btn a {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 12px;
+  font-weight: 400;
+  color: #333b46;
+  padding: 8px 30px;
+  border: 1px solid #333b46;
+  border-radius: 18px;
+}
+body .aboutUs .content .wrap .btn a:hover {
+  background: #19bd9a;
+  border: none;
+  color: #ffffff;
+}
+body .aboutUs .ipad {
+  flex-basis: 40%;
+}
+body .aboutUs .ipad img {
+  height: 100%;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
