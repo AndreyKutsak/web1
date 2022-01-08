@@ -102,10 +102,18 @@
   letter-spacing: 0.2em;
   color: #333b46;
 }
-.main-desc {
+.main-desc-14px {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   line-height: 25px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #81868e;
+}
+.main-desc-16px {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 28px;
   font-weight: 400;
   letter-spacing: 0.05em;
   color: #81868e;
@@ -130,28 +138,22 @@ html {
 }
 body header {
   width: 100%;
-  height: 700px;
   background: url(../img/header.jpg) no-repeat;
   background-size: cover;
+  padding: 50px 0 80px;
 }
-body header .header {
-  max-width: 1170px;
-  padding: 0 10px;
-  margin: 0 auto;
-  height: 100%;
-  padding: 50px 10px 70px;
+body header .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
-body header .header .nav {
+body header .container .nav {
   display: flex;
   justify-content: space-between;
 }
-body header .header .nav .logo {
+body header .container .nav .logo {
   transition: 0.3s;
 }
-body header .header .nav .logo a {
+body header .container .nav .logo a {
   text-decoration: none;
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
@@ -160,17 +162,18 @@ body header .header .nav .logo a {
   font-weight: 800;
   color: #ffffff;
 }
-body header .header .nav .logo:hover {
+body header .container .nav .logo:hover {
   transform: scale(1.1);
 }
-body header .header .nav .menu {
+body header .container .nav .menu {
   flex-basis: 50%;
 }
-body header .header .nav .menu ul {
+body header .container .nav .menu ul {
   display: flex;
   justify-content: space-between;
+  list-style: none;
 }
-body header .header .nav .menu ul li a {
+body header .container .nav .menu ul li a {
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -178,38 +181,32 @@ body header .header .nav .menu ul li a {
   font-weight: 400;
   color: #ffffff;
   padding: 5px 20px;
-}
-body header .header .nav .menu ul li a:hover {
-  border: 1px solid #ffffff;
+  border: 1px solid transparent;
   border-radius: 17px;
+  transition: 0.3s;
 }
-body header .header .headerContent {
+body header .container .nav .menu ul li a:hover {
+  border: 1px solid #ffffff;
+}
+body header .container .headerContent {
   width: 60%;
   align-self: center;
+  padding: 220px 0;
+  text-align: center;
 }
-body header .header .headerContent h1 {
+body header .container .headerContent h1 {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 35px;
-  line-height: 90px;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: #ffffff;
-  text-align: center;
+  margin-bottom: 45px;
 }
-body header .header .headerContent p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  line-height: 25px;
-  font-weight: 400;
-  letter-spacing: 0.05em;
-  color: #81868e;
-  font-size: 16px;
-  line-height: 28px;
+body header .container .headerContent .main-desc-16px {
   color: white;
-  text-align: center;
 }
-body header .header .arrow {
+body header .container .arrow {
   align-self: center;
   width: 36px;
   height: 36px;
@@ -218,15 +215,15 @@ body header .header .arrow {
   text-align: center;
   transition: 0.3s;
 }
-body header .header .arrow a {
+body header .container .arrow a {
   text-decoration: none;
   color: #ffffff;
 }
-body header .header .arrow a i {
+body header .container .arrow a i {
   line-height: 36px;
   font-size: 20px;
 }
-body header .header .arrow:hover {
+body header .container .arrow:hover {
   background: #19bd9a;
 }
 body .aboutUs {
@@ -247,22 +244,7 @@ body .aboutUs .content .wrap {
   width: 70%;
 }
 body .aboutUs .content .wrap h2 {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 20px;
-  line-height: 12px;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  color: #333b46;
   line-height: 100px;
-}
-body .aboutUs .content .wrap p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  line-height: 25px;
-  font-weight: 400;
-  letter-spacing: 0.05em;
-  color: #81868e;
 }
 body .aboutUs .content .wrap .btn {
   padding: 40px 0;
@@ -277,6 +259,7 @@ body .aboutUs .content .wrap .btn a {
   padding: 8px 30px;
   border: 1px solid #333b46;
   border-radius: 18px;
+  transition: 0.3s;
 }
 body .aboutUs .content .wrap .btn a:hover {
   background: #19bd9a;
@@ -364,13 +347,11 @@ body .details .content .block2 div:nth-child(1) .wrap h3 {
 }
 body .details .content .block2 div:nth-child(1) .wrap p {
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  line-height: 25px;
+  font-size: 16px;
+  line-height: 28px;
   font-weight: 400;
   letter-spacing: 0.05em;
   color: #81868e;
-  font-size: 16px;
-  line-height: 28px;
 }
 body .details .content .block2 div:nth-child(1) .wrap p span:nth-child(1) {
   color: #19bd9a;
