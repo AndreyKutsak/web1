@@ -227,29 +227,24 @@ body header .container .arrow:hover {
   background: #19bd9a;
 }
 body .aboutUs {
-  max-width: 1170px;
-  padding: 0 10px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  padding: 80px 10px 60px;
+  padding: 80px 0 60px;
   background: #ffffff;
 }
-body .aboutUs .content {
-  flex-basis: 60%;
+body .aboutUs .container {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
-body .aboutUs .content .wrap {
-  width: 70%;
+body .aboutUs .container .aboutUsContent {
+  flex-basis: 50%;
+  padding: 0 50px;
 }
-body .aboutUs .content .wrap h2 {
+body .aboutUs .container .aboutUsContent h2 {
   line-height: 100px;
 }
-body .aboutUs .content .wrap .btn {
+body .aboutUs .container .aboutUsContent .btn {
   padding: 40px 0;
 }
-body .aboutUs .content .wrap .btn a {
+body .aboutUs .container .aboutUsContent .btn a {
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -261,15 +256,15 @@ body .aboutUs .content .wrap .btn a {
   border-radius: 18px;
   transition: 0.3s;
 }
-body .aboutUs .content .wrap .btn a:hover {
+body .aboutUs .container .aboutUsContent .btn a:hover {
   background: #19bd9a;
   border: none;
   color: #ffffff;
 }
-body .aboutUs .ipad {
+body .aboutUs .container .ipad {
   flex-basis: 40%;
 }
-body .aboutUs .ipad img {
+body .aboutUs .container .ipad img {
   height: 100%;
   width: auto;
   display: block;

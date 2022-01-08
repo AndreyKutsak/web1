@@ -147,17 +147,14 @@ body {
     }
   }
   .aboutUs {
-    .container;
-    display: flex;
-    justify-content: space-between;
-    padding: 80px 10px 60px;
+    padding: 80px 0 60px;
     background: @white;
-    .content {
-      flex-basis: 60%;
-      display: flex;
-      justify-content: end;
-      .wrap {
-        width: 70%;
+    .container {
+     display: flex;
+     justify-content: flex-end;
+      .aboutUsContent {
+        flex-basis: 50%;
+        padding: 0 50px;
         h2 {
           line-height: 100px;
         }
@@ -182,14 +179,14 @@ body {
           }
         }
       }
-    }
-    .ipad {
-      flex-basis: 40%;
-      img {
-        height: 100%;
-        width: auto;
-        display: block;
-        margin: 0 auto;
+      .ipad {
+        flex-basis: 40%;
+        img {
+          height: 100%;
+          width: auto;
+          display: block;
+          margin: 0 auto;
+        }
       }
     }
   }
