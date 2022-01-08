@@ -1,9 +1,7 @@
 // including all needed resources
 @import "varibles.less";
 @import "mixins.less";
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import "../fonts/stylesheet.less";
 // common elemnts
 .container {
   max-width: 1170px;
@@ -52,7 +50,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  }
+}
 body {
   header {
     width: 100%;
@@ -76,8 +74,8 @@ body {
             font-weight: 800;
             color: @white;
           }
-        &:hover {
-          transform: scale(1.1);
+          &:hover {
+            transform: scale(1.1);
           }
         }
         .menu {
@@ -118,13 +116,13 @@ body {
           text-transform: uppercase;
           letter-spacing: 0.2em;
           color: @white;
-          margin-bottom: 45px
+          margin-bottom: 45px;
         }
         .main-desc-16px {
           color: white;
         }
       }
-      .arrow{
+      .arrow {
         align-self: center;
         width: 36px;
         height: 36px;
@@ -150,8 +148,8 @@ body {
     background: @white;
     padding: 80px 0 60px;
     .container {
-     display: flex;
-     justify-content: flex-end;
+      display: flex;
+      justify-content: flex-end;
       .aboutUsContent {
         flex-basis: 50%;
         padding: 0 50px;
@@ -202,7 +200,7 @@ body {
         text-align: center;
         padding-bottom: 60px;
         .main-desc-14px {
-          padding: 40px 0 60px
+          padding: 40px 0 60px;
         }
         .iconsBlock .icon {
           margin: 0 15px;
@@ -218,7 +216,7 @@ body {
           font-weight: 400;
           letter-spacing: 0.04em;
           color: @gray250;
-          margin-bottom: 35px
+          margin-bottom: 35px;
         }
         .creativeIdeasContent {
           display: flex;
@@ -257,4 +255,3 @@ body {
     }
   }
 }
-  
