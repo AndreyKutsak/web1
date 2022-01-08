@@ -1,6 +1,14 @@
 // including all needed resources
 @import "varibles.less";
 @import "mixins.less";
+@import "../fonts/stylesheet.less";
+* {
+  box-sizing: border-box;
+}
+img {
+  height: auto;
+  max-width: 100%;
+}
 // common elemnts
 .container {
   max-width: 1120px;
@@ -89,8 +97,29 @@ footer {
       li {
         width: 25px;
         height: 25px;
-        background-color: #000;
+        padding: 5px;
+        margin: 0 5px;
+
         border-radius: 50%;
+        img {
+          width: 14px;
+          height: 14px;
+        }
+      }
+      .fb {
+        background-color: @fb;
+      }
+      .tw {
+        background-color: @tw;
+      }
+      .in {
+        background-color: @in;
+      }
+      .insta {
+        background-color: @insta;
+      }
+      .vm {
+        background-color: @vm;
       }
     }
   }
