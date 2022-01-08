@@ -101,6 +101,7 @@
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: #333b46;
+  padding-bottom: 40px;
 }
 .main-desc-14px {
   font-family: 'Open Sans', sans-serif;
@@ -127,6 +128,22 @@
 }
 .icon:hover {
   background: #19bd9a;
+}
+.btn a {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 12px;
+  font-weight: 400;
+  color: #ffffff;
+  padding: 8px 30px;
+  border: 1px solid #ffffff;
+  border-radius: 18px;
+  transition: 0.3s;
+}
+.btn a:hover {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.7);
 }
 html {
   scroll-behavior: smooth;
@@ -236,25 +253,14 @@ body .aboutUs .container {
 }
 body .aboutUs .container .aboutUsContent {
   flex-basis: 50%;
-  padding: 0 50px;
-}
-body .aboutUs .container .aboutUsContent h2 {
-  line-height: 100px;
+  padding: 30px 50px;
 }
 body .aboutUs .container .aboutUsContent .btn {
   padding: 40px 0;
 }
 body .aboutUs .container .aboutUsContent .btn a {
-  text-decoration: none;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 12px;
-  font-weight: 400;
   color: #333b46;
-  padding: 8px 30px;
   border: 1px solid #333b46;
-  border-radius: 18px;
-  transition: 0.3s;
 }
 body .aboutUs .container .aboutUsContent .btn a:hover {
   background: #19bd9a;
@@ -282,13 +288,12 @@ body .details .container {
 body .details .container .detailsContent {
   width: 40%;
   text-align: center;
-  padding-bottom: 60px;
 }
-body .details .container .detailsContent .main-desc-14px {
-  padding: 40px 0 60px;
+body .details .container .detailsContent .iconsBlock {
+  padding: 50px 0;
 }
 body .details .container .detailsContent .iconsBlock .icon {
-  margin: 0 15px;
+  margin: 0px 15px;
 }
 body .details .container .detailsContent .iconsBlock .icon a {
   vertical-align: middle;
@@ -328,4 +333,86 @@ body .details .container .creativeIdeas .creativeIdeasContent .main-desc-14px sp
 body .details .container .creativeIdeas .creativeIdeasContent .main-desc-14px span:nth-child(2) {
   color: #19bd9a;
   font-weight: 800;
+}
+body .projects {
+  background: #ffffff;
+}
+body .projects .container .projectsContent {
+  width: 40%;
+  padding: 80px 0 60px;
+  margin: 0 auto;
+  text-align: center;
+}
+body .projects .projectsImages {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+body .projects .projectsImages .imgBlock {
+  flex-grow: 1;
+  position: relative;
+  transition: 0.5s;
+}
+body .projects .projectsImages .imgBlock .vintage {
+  background: url(../img/projects/project_2_1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+}
+body .projects .projectsImages .imgBlock .branding {
+  background: url(../img/projects/project_3_1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+}
+body .projects .projectsImages .imgBlock::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+body .projects .projectsImages .imgBlock .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Source Sans Pro';
+  font-size: 20px;
+  line-height: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  z-index: 9;
+}
+body .projects .projectsImages .imgBlock:hover::after,
+body .projects .projectsImages .imgBlock:hover .title {
+  display: none;
+}
+body .projects .projectsImages .imgBlock:hover {
+  flex-grow: 1.5;
+}
+body .projects .projectsFooter {
+  width: 100%;
+  background: url(../img/bg_submit_now.jpg) no-repeat;
+  background-size: cover;
+}
+body .projects .projectsFooter .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 45px 0;
+}
+body .projects .projectsFooter .container p {
+  font-family: 'Open Sans';
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+body .projects .projectsFooter .container p span {
+  font-weight: 700;
 }
