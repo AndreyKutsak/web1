@@ -227,8 +227,8 @@ body header .container .arrow:hover {
   background: #19bd9a;
 }
 body .aboutUs {
-  padding: 80px 0 60px;
   background: #ffffff;
+  padding: 80px 0 60px;
 }
 body .aboutUs .container {
   display: flex;
@@ -272,108 +272,60 @@ body .aboutUs .container .ipad img {
 }
 body .details {
   background: #f3f3f3;
+  padding: 80px 0 100px;
 }
-body .details .content {
-  max-width: 1170px;
-  padding: 0 10px;
-  margin: 0 auto;
+body .details .container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-body .details .content .block1 {
+body .details .container .detailsContent {
   width: 40%;
-  padding: 60px 0;
   text-align: center;
-}
-body .details .content .block1 h2 {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 20px;
-  line-height: 12px;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  color: #333b46;
-  line-height: 80px;
-}
-body .details .content .block1 p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  line-height: 25px;
-  font-weight: 400;
-  letter-spacing: 0.05em;
-  color: #81868e;
   padding-bottom: 60px;
 }
-body .details .content .block1 .icons span {
-  background: #81868e;
-  padding: 16px 13px;
-  border-radius: 50%;
-  text-align: center;
-  transition: 0.3s;
+body .details .container .detailsContent .main-desc-14px {
+  padding: 40px 0 60px;
+}
+body .details .container .detailsContent .iconsBlock .icon {
   margin: 0 15px;
 }
-body .details .content .block1 .icons span:hover {
-  background: #19bd9a;
-}
-body .details .content .block1 .icons span a {
+body .details .container .detailsContent .iconsBlock .icon a {
   vertical-align: middle;
 }
-body .details .content .block2 {
-  display: flex;
-  justify-content: flex-start;
-  padding: 0 60px 100px;
-}
-body .details .content .block2 div:nth-child(1) {
-  flex-basis: 45%;
-}
-body .details .content .block2 div:nth-child(1) .wrap {
-  width: 70%;
-  display: block;
-  margin: 0 auto;
-}
-body .details .content .block2 div:nth-child(1) .wrap h3 {
+body .details .container .creativeIdeas h3 {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   font-weight: 400;
   letter-spacing: 0.04em;
   color: #464646;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
-body .details .content .block2 div:nth-child(1) .wrap p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 28px;
-  font-weight: 400;
-  letter-spacing: 0.05em;
-  color: #81868e;
+body .details .container .creativeIdeas .creativeIdeasContent {
+  display: flex;
+  justify-content: space-between;
 }
-body .details .content .block2 div:nth-child(1) .wrap p span:nth-child(1) {
+body .details .container .creativeIdeas .creativeIdeasContent .main-desc-16px {
+  flex-basis: 30%;
+}
+body .details .container .creativeIdeas .creativeIdeasContent .main-desc-16px span:nth-child(1) {
   color: #19bd9a;
   font-weight: 700;
 }
-body .details .content .block2 div:nth-child(1) .wrap p span:nth-child(2) {
+body .details .container .creativeIdeas .creativeIdeasContent .main-desc-16px span:nth-child(2) {
   color: #636971;
   font-weight: 700;
 }
-body .details .content .block2 div:nth-child(2) {
-  flex-basis: 55%;
+body .details .container .creativeIdeas .creativeIdeasContent .main-desc-14px {
+  flex-basis: 65%;
+  padding: 0 100px;
 }
-body .details .content .block2 div:nth-child(2) p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  line-height: 25px;
-  font-weight: 400;
-  letter-spacing: 0.05em;
-  color: #81868e;
-  padding-top: 60px;
-}
-body .details .content .block2 div:nth-child(2) p span:nth-child(1),
-body .details .content .block2 div:nth-child(2) p span:nth-child(3) {
+body .details .container .creativeIdeas .creativeIdeasContent .main-desc-14px span:nth-child(1),
+body .details .container .creativeIdeas .creativeIdeasContent .main-desc-14px span:nth-child(3) {
   color: #636971;
   font-weight: 800;
 }
-body .details .content .block2 div:nth-child(2) p span:nth-child(2) {
+body .details .container .creativeIdeas .creativeIdeasContent .main-desc-14px span:nth-child(2) {
   color: #19bd9a;
   font-weight: 800;
 }
