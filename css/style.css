@@ -110,6 +110,9 @@
   font-weight: 400;
   letter-spacing: 0.05em;
   color: #81868e;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 .main-desc-16px {
   font-family: 'Open Sans', sans-serif;
@@ -118,15 +121,27 @@
   font-weight: 400;
   letter-spacing: 0.05em;
   color: #81868e;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 .icon {
   background: #81868e;
-  padding: 16px 13px;
+  width: 53px;
+  height: 53px;
+  padding: 12px;
   border-radius: 50%;
   text-align: center;
   transition: 0.3s;
 }
+.icon a img {
+  width: 29px;
+  height: 29px;
+}
 .icon:hover {
+  background: #19bd9a;
+}
+.icon:focus {
   background: #19bd9a;
 }
 .btn a {
@@ -291,12 +306,11 @@ body .details .container .detailsContent {
 }
 body .details .container .detailsContent .iconsBlock {
   padding: 50px 0;
+  display: flex;
+  justify-content: center;
 }
 body .details .container .detailsContent .iconsBlock .icon {
   margin: 0px 15px;
-}
-body .details .container .detailsContent .iconsBlock .icon a {
-  vertical-align: middle;
 }
 body .details .container .creativeIdeas h3 {
   font-family: 'Open Sans', sans-serif;
@@ -373,6 +387,7 @@ body .projects .projectsImages .imgBlock::after {
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.7);
+  transition: 1s;
 }
 body .projects .projectsImages .imgBlock .title {
   position: absolute;
@@ -387,10 +402,12 @@ body .projects .projectsImages .imgBlock .title {
   letter-spacing: 0.2em;
   color: #ffffff;
   z-index: 9;
+  transition: 1s;
 }
 body .projects .projectsImages .imgBlock:hover::after,
 body .projects .projectsImages .imgBlock:hover .title {
-  display: none;
+  font-size: 0;
+  opacity: 0;
 }
 body .projects .projectsImages .imgBlock:hover {
   flex-grow: 1.5;
@@ -415,4 +432,130 @@ body .projects .projectsFooter .container p {
 }
 body .projects .projectsFooter .container p span {
   font-weight: 700;
+}
+body .ourServices {
+  background: #f3f3f3;
+  padding: 80px 0 140px;
+}
+body .ourServices .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .ourServices .container .servicesContent {
+  width: 40%;
+  text-align: center;
+  margin-bottom: 60px;
+}
+body .ourServices .container .servicesList {
+  display: flex;
+  justify-content: space-between;
+}
+body .ourServices .container .servicesList .servicesIcons {
+  flex-basis: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .ourServices .container .servicesList .servicesIcons .icon {
+  margin-bottom: 20px;
+}
+body .ourServices .container .servicesList .serviceListContent {
+  flex-basis: 35%;
+  width: 750px;
+  position: relative;
+}
+body .ourServices .container .servicesList .serviceListContent .serviceListElement {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.3s;
+  pointer-events: none;
+}
+body .ourServices .container .servicesList .serviceListContent .serviceListElement:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+body .ourServices .container .servicesList .serviceListContent .serviceListElement h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: #464646;
+  margin-bottom: 30px;
+}
+body .ourServices .container .servicesList .serviceListContent .serviceListElement .main-desc-16px {
+  padding-bottom: 35px;
+}
+body .ourServices .container .servicesList .serviceListContent .serviceListElement .main-desc-16px span:nth-child(1) {
+  color: #19bd9a;
+  font-weight: 700;
+}
+body .ourServices .container .servicesList .serviceListContent .serviceListElement .main-desc-16px span:nth-child(2) {
+  color: #636971;
+  font-weight: 700;
+}
+body .ourServices .container .servicesList .serviceListContent .serviceListElement .main-desc-14px span {
+  color: #19bd9a;
+  font-weight: 700;
+}
+body .ourServices .container .servicesList .servicesChart {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body .ourServices .container .servicesList .servicesChart .chartElement {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+body .ourServices .container .servicesList .servicesChart .chartElement .percent {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  line-height: 110px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #81868e;
+  width: 117px;
+  height: 117px;
+  border: 1px solid #81868e;
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+body .ourServices .container .servicesList .servicesChart .chartElement .percent span {
+  font-size: 14px;
+}
+body .ourServices .container .servicesList .servicesChart .chartElement .title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  color: #81868e;
+}
+body .ourServices .container .servicesList .servicesChart .chartElement .ellipse {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 120px;
+}
+body .ourServices .container .servicesList .servicesChart .chartElement .ellipse img {
+  animation: moveEllipse 5s ease-in-out infinite;
+}
+@keyframes moveEllipse {
+  40% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+body .ourServices .container .servicesList .servicesChart .chartElement .ellipse .startSecond {
+  animation-delay: 1s;
+}
+body .ourServices .container .servicesList .servicesChart .chartElement .ellipse .startThird {
+  animation-delay: 2s;
 }

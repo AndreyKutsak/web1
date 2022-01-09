@@ -27,6 +27,9 @@
   font-weight: 400;
   letter-spacing: 0.05em;
   color: @gray200;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 .main-desc-16px {
   font-family: @openSans;
@@ -35,14 +38,28 @@
   font-weight: 400;
   letter-spacing: 0.05em;
   color: @gray200;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 .icon {
   background: @gray200;
-  padding: 16px 13px;
+  width: 53px;
+  height: 53px;
+  padding: 12px;
   border-radius: 50%;
   text-align: center;
   transition: 0.3s;
+  a {
+    img {
+      width: 29px;
+      height: 29px;
+    }
+  }
   &:hover {
+    background: @green200;
+  }
+  &:focus {
     background: @green200;
   }
 }
@@ -210,11 +227,10 @@ body {
         text-align: center;
         .iconsBlock {
           padding: 50px 0;
+          display: flex;
+          justify-content: center;
           .icon {
             margin: 0px 15px;
-            a {
-              vertical-align: middle;
-            }
           }
         }
       }
@@ -252,7 +268,6 @@ body {
                 color: @gray350;
                 font-weight: 800;
               }
-
               &:nth-child(2) {
                 color: @green200;
                 font-weight: 800;
@@ -347,6 +362,7 @@ body {
             height: 100%;
             width: 100%;
             background: rgba(0, 0, 0, 0.7);
+            transition: 1s;
           }
         .title {
           position: absolute;
@@ -361,9 +377,11 @@ body {
           letter-spacing: 0.2em;
           color: @white;
           z-index: 9;
+          transition: 1s;
         }
         &:hover::after, &:hover .title {
-          display: none;
+          font-size: 0;
+          opacity: 0;
         }
         &:hover {
           flex-grow: 1.5;
@@ -388,6 +406,137 @@ body {
           color: @white;
           span {
             font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+  .ourServices {
+    background: @gray;
+    padding: 80px 0 140px;
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .servicesContent {
+        width: 40%;
+        text-align: center;
+        margin-bottom: 60px;
+      }
+      .servicesList {
+        display: flex;
+        justify-content: space-between;
+        .servicesIcons {
+          flex-basis: 10%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .icon {
+            margin-bottom: 20px;
+          }
+        }
+        .serviceListContent {
+          flex-basis: 35%;
+          width: 750px;
+          position: relative;
+          .serviceListElement {
+            position: absolute;
+            top: 0;
+            left: 0;
+            // width: 100%;
+            opacity: 0;
+            transition: 0.3s;
+            pointer-events: none;
+            &:target {
+              opacity: 1;
+              pointer-events: auto;
+            }
+            h3 {
+              font-family: @openSans;
+              font-size: 20px;
+              font-weight: 400;
+              letter-spacing: 0.04em;
+              color: @gray250;
+              margin-bottom: 30px;
+            }
+            .main-desc-16px {
+              padding-bottom: 35px;
+              span {
+                &:nth-child(1) {
+                  color: @green200;
+                  font-weight: 700;
+                }
+                &:nth-child(2) {
+                  color: @gray350;
+                  font-weight: 700;
+                }
+              }
+            }
+            .main-desc-14px {
+              span {
+                color: @green200;
+                font-weight: 700;
+              }
+            }
+          }
+        }
+        .servicesChart {
+          flex-basis: 50%;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          .chartElement {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            position: relative;
+            .percent {
+              font-family: @openSans;
+              font-size: 25px;
+              line-height: 110px;
+              font-weight: 400;
+              letter-spacing: 0.05em;
+              color: @gray200;
+              width: 117px;
+              height: 117px;
+              border: 1px solid @gray200;
+              border-radius: 50%;
+              margin-bottom: 25px;
+              span {
+                font-size: 14px;
+              }
+            }
+            .title {
+              font-family: @robotoLight;
+              font-size: 16px;
+              line-height: 25px;
+              font-weight: 300;
+              letter-spacing: 0.05em;
+              color: @gray200;
+            }
+            .ellipse {
+              position: absolute;
+              top: -2px;
+              left: -2px;
+              width: 120px;
+              img {
+                animation: moveEllipse 5s ease-in-out infinite;
+                @keyframes moveEllipse {
+                  40% {
+                    transform: rotate(360deg);
+                  }
+                  100% {
+                    transform: rotate(360deg);
+                  }
+                }
+              }
+              .startSecond {
+                animation-delay: 1s;
+              }
+              .startThird {
+                animation-delay: 2s;
+              }
+            }
           }
         }
       }
