@@ -1,92 +1,219 @@
 @font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
+  font-family: "Open Sans";
+  src: url("OpenSans-ExtraBoldItalic.woff2") format("woff2"), url("OpenSans-ExtraBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("OpenSans-Light.woff2") format("woff2"), url("OpenSans-Light.woff") format("woff");
   font-weight: 300;
-  font-stretch: normal;
+  font-style: normal;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0C4n.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-stretch: normal;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0C4n.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
+  font-family: "Open Sans";
+  src: url("OpenSans-Medium.woff2") format("woff2"), url("OpenSans-Medium.woff") format("woff");
   font-weight: 500;
-  font-stretch: normal;
+  font-style: normal;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjr0C4n.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
+  src: url("OpenSans-LightItalic.woff2") format("woff2"), url("OpenSans-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("OpenSans-MediumItalic.woff2") format("woff2"), url("OpenSans-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto-Bold.woff2") format("woff2"), url("Roboto-Bold.woff") format("woff");
+  font-weight: bold;
   font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto-BlackItalic.woff2") format("woff2"), url("Roboto-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("OpenSans-SemiBold.woff2") format("woff2"), url("OpenSans-SemiBold.woff") format("woff");
   font-weight: 600;
-  font-stretch: normal;
+  font-style: normal;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1y4n.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
+  src: url("OpenSans-Regular.woff2") format("woff2"), url("OpenSans-Regular.woff") format("woff");
+  font-weight: normal;
   font-style: normal;
-  font-weight: 700;
-  font-stretch: normal;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1y4n.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 800;
-  font-stretch: normal;
+  font-family: "Open Sans";
+  src: url("OpenSans-Italic.woff2") format("woff2"), url("OpenSans-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1y4n.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Source Sans Pro';
+  font-family: "Open Sans";
+  src: url("OpenSans-Bold.woff2") format("woff2"), url("OpenSans-Bold.woff") format("woff");
+  font-weight: bold;
   font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto-Black.woff2") format("woff2"), url("Roboto-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("OpenSans-SemiBoldItalic.woff2") format("woff2"), url("OpenSans-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("OpenSans-BoldItalic.woff2") format("woff2"), url("OpenSans-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("OpenSans-ExtraBold.woff2") format("woff2"), url("OpenSans-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto-LightItalic.woff2") format("woff2"), url("Roboto-LightItalic.woff") format("woff");
   font-weight: 300;
+  font-style: italic;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zAkA.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 400;
+  font-family: "Roboto";
+  src: url("Roboto-Italic.woff2") format("woff2"), url("Roboto-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xK3dSBYKcSV-LCoeQqfX1RYOo3aPw.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
+  src: url("Roboto-ThinItalic.woff2") format("woff2"), url("Roboto-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("SourceSansPro-Black.woff2") format("woff2"), url("SourceSansPro-Black.woff") format("woff");
+  font-weight: 900;
   font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto-Light.woff2") format("woff2"), url("Roboto-Light.woff") format("woff");
   font-weight: 300;
+  font-style: normal;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmSU5vAw.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v29/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
+  font-family: "Roboto";
+  src: url("Roboto-MediumItalic.woff2") format("woff2"), url("Roboto-MediumItalic.woff") format("woff");
   font-weight: 500;
+  font-style: italic;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmEU9vAw.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
+  src: url("Roboto-Medium.woff2") format("woff2"), url("Roboto-Medium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
-  font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmWUlvAw.ttf) format('truetype');
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto-Regular.woff2") format("woff2"), url("Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto-Thin.woff2") format("woff2"), url("Roboto-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto-BoldItalic.woff2") format("woff2"), url("Roboto-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("SourceSansPro-ExtraLightItalic.woff2") format("woff2"), url("SourceSansPro-ExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("SourceSansPro-BlackItalic.woff2") format("woff2"), url("SourceSansPro-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("SourceSansPro-ExtraLight.woff2") format("woff2"), url("SourceSansPro-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("SourceSansPro-BoldItalic.woff2") format("woff2"), url("SourceSansPro-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("SourceSansPro-Italic.woff2") format("woff2"), url("SourceSansPro-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("SourceSansPro-Bold.woff2") format("woff2"), url("SourceSansPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 .container {
   max-width: 1170px;
@@ -398,7 +525,7 @@ body .projects .projectsImages .imgBlock .title {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: 'Source Sans Pro';
+  font-family: "Source Sans Pro";
   font-size: 20px;
   line-height: 12px;
   font-weight: 300;
@@ -427,7 +554,7 @@ body .projects .projectsFooter .container {
   padding: 45px 0;
 }
 body .projects .projectsFooter .container p {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 20px;
   line-height: 25px;
   font-weight: 400;
@@ -526,7 +653,7 @@ body .ourServices .container .servicesList .servicesChart .chartElement .percent
   color: #81868e;
   width: 117px;
   height: 117px;
-  border: 2px solid #cfd3d4;
+  border: 1px solid #81868e;
   border-radius: 50%;
   margin-bottom: 25px;
 }
@@ -543,15 +670,15 @@ body .ourServices .container .servicesList .servicesChart .chartElement .title {
 }
 body .ourServices .container .servicesList .servicesChart .chartElement .ellipse {
   position: absolute;
-  top: -1px;
-  left: -1px;
+  top: -2px;
+  left: -2px;
   width: 120px;
 }
 body .ourServices .container .servicesList .servicesChart .chartElement .ellipse img {
-  animation: moveEllipse 8s ease-in-out infinite;
+  animation: moveEllipse 5s ease-in-out infinite;
 }
 @keyframes moveEllipse {
-  20% {
+  40% {
     transform: rotate(360deg);
   }
   100% {
