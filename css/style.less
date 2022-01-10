@@ -650,6 +650,14 @@ body {
           &:hover::after {
             background: rgba(0, 0, 0, 0.7);
           }
+          &:hover {
+            .onHover {
+              opacity: 1;
+            }
+            h3::after {
+              animation: lineMove 2s linear;
+            }
+          }
           .onHover {
             position: absolute;
             top: 60%;
@@ -659,14 +667,14 @@ body {
             z-index: 9;
             opacity: 0;
             transition: 0.3s;
-            &:hover {
-              opacity: 1;
-            }
-            &:hover {
-              h3::after {
-              animation: lineMove 2s linear;
-              }
-            }
+            // &:hover {
+            //   opacity: 1;
+            // }
+            // &:hover {
+            //   h3::after {
+            //   animation: lineMove 2s linear;
+            //   }
+            // }
             h3 {
               font-family: @sourceSansPro;
               font-size: 20px;

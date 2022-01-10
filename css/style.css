@@ -842,6 +842,12 @@ body .portfolio .container .allWorks .portfolioImg::after {
 body .portfolio .container .allWorks .portfolioImg:hover::after {
   background: rgba(0, 0, 0, 0.7);
 }
+body .portfolio .container .allWorks .portfolioImg:hover .onHover {
+  opacity: 1;
+}
+body .portfolio .container .allWorks .portfolioImg:hover h3::after {
+  animation: lineMove 2s linear;
+}
 body .portfolio .container .allWorks .portfolioImg .onHover {
   position: absolute;
   top: 60%;
@@ -851,12 +857,6 @@ body .portfolio .container .allWorks .portfolioImg .onHover {
   z-index: 9;
   opacity: 0;
   transition: 0.3s;
-}
-body .portfolio .container .allWorks .portfolioImg .onHover:hover {
-  opacity: 1;
-}
-body .portfolio .container .allWorks .portfolioImg .onHover:hover h3::after {
-  animation: lineMove 2s linear;
 }
 body .portfolio .container .allWorks .portfolioImg .onHover h3 {
   font-family: 'Source Sans Pro', sans-serif;
