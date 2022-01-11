@@ -536,9 +536,90 @@
           </div>
         </div>
       </section>
+      <section class="team">
+        <div class="container">
+          <h2 class="main-head">THE TEAM</h2>
+          <p class="main-desc-14px team-desc">
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+            blanditiis praesentium
+          </p>
+          <div class="sliderWrapper">
+            <div class="personalSlide slide1" onclick="stopSlider()">
+              <img src="img/AbdullahNoman.jpg" alt="Abdullah_Noman" />
+              <div class="aboutPerson">
+                <h3>Abdullah Noman</h3>
+                <p class="position">Creative Director, Code Cafe</p>
+                <p class="main-desc-14px">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis praesentium
+                </p>
+                <div class="skilsWrapper">
+                  <p class="skill">BRANDING <span>80%</span></p>
+                  <p class="skill">Web Design <span>65%</span></p>
+                  <p class="skill">User Interface <span>75%</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="personalSlide slide2" onclick="stopSlider()">
+              <img src="img/portfolio/10.jpg" alt="Abdullah_Noman" />
+              <div class="aboutPerson">
+                <h3>Lorem ipsum dolor sit.</h3>
+                <p class="position">Lorem ipsum dolor sit amet.</p>
+                <p class="main-desc-14px">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                  corporis illo voluptas quam.
+                </p>
+                <div class="skilsWrapper">
+                  <p class="skill">LOREM <span>80%</span></p>
+                  <p class="skill">IPSUM DOLOR SIT <span>65%</span></p>
+                  <p class="skill">AMET CONSECTETUR <span>75%</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="personalSlide slide3" onclick="stopSlider()">
+              <img src="img/portfolio/5.jpg" alt="Abdullah_Noman" />
+              <div class="aboutPerson">
+                <h3>Lorem ipsum dolor.</h3>
+                <p class="position">Lorem ipsum dolor sit.</p>
+                <p class="main-desc-14px">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                  corporis illo voluptas quam.
+                </p>
+                <div class="skilsWrapper">
+                  <p class="skill">LOREM IPSUM<span>80%</span></p>
+                  <p class="skill">DOLOR SIT<span>65%</span></p>
+                  <p class="skill">AMET CONSECTETUR <span>75%</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sliderNavigation">
+            <div
+              id="slide1"
+              class="point"
+              onclick="changeSlide('slide1')"
+            ></div>
+            <div
+              id="slide2"
+              class="point"
+              onclick="changeSlide('slide2')"
+            ></div>
+            <div
+              id="slide3"
+              class="point"
+              onclick="changeSlide('slide3')"
+            ></div>
+          </div>
+        </div>
+        <div class="footerTeam">
+          <p>Already Loved Us? Let’s talk!</p>
+          <div class="btn"><a href="">Contact Us</a></div>
+        </div>
+      </section>
     </main>
     <script src="js/app.js"></script>
     <script>
+      // portfolio filter
       function showAll(cls) {
         let showElement = document.getElementsByClassName(cls);
         for (i = 0; i < showElement.length; i++) {
@@ -556,6 +637,44 @@
             elementList[i].style.display = "none";
           }
         }
+      }
+
+      // slider
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function showSlides(n) {
+        let slides = document.getElementsByClassName("personalSlide");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        let currentPoint;
+        let points = document.getElementsByClassName("point");
+
+        for (let slide of slides) {
+          slide.style.display = "none";
+        }
+        for (let point of points) {
+          point.style.background = "white";
+        }
+        slides[slideIndex - 1].style.display = "flex";
+        currentPoint = document.getElementById("slide" + slideIndex);
+        currentPoint.style.background = "#19bd9a";
+      }
+
+      let timer = setInterval(function () {
+        slideIndex++;
+        showSlides(slideIndex);
+      }, 2000);
+
+      function stopSlider() {
+        clearInterval(timer);
+      }
+      function changeSlide(cls) {
+        stopSlider();
+        let selectedSlide = document.getElementsByClassName(cls);
+        // selectedSlide.style.display = "flex";
+        // console.log(selectedSlide);
       }
     </script>
   </body>

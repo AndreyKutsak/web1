@@ -902,12 +902,9 @@ body .portfolio .container .footerPortfolio {
   background: url(../img/bg_start_Project.jpg) no-repeat;
   background-size: cover;
   padding: 55px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
 }
 body .portfolio .container .footerPortfolio p {
-  text-align: center;
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   line-height: 25px;
@@ -918,4 +915,133 @@ body .portfolio .container .footerPortfolio p {
 }
 body .portfolio .container .footerPortfolio p span {
   font-weight: 700;
+}
+body .team {
+  background: #ffffff;
+  padding-top: 80px;
+}
+body .team .container {
+  text-align: center;
+}
+body .team .container .team-desc {
+  width: 40%;
+  margin: 0 auto;
+}
+body .team .container .sliderWrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+body .team .container .sliderWrapper .personalSlide {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 40px;
+  display: none;
+}
+body .team .container .sliderWrapper .personalSlide img {
+  width: auto;
+  height: 100%;
+}
+body .team .container .sliderWrapper .personalSlide .aboutPerson {
+  flex-basis: 45%;
+  padding: 20px 40px 0px;
+  text-align: right;
+}
+body .team .container .sliderWrapper .personalSlide .aboutPerson h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: #464646;
+  position: relative;
+}
+body .team .container .sliderWrapper .personalSlide .aboutPerson h3::after {
+  content: " ";
+  border-right: 4px solid #19bd9a;
+  height: 42px;
+  position: absolute;
+  top: 15px;
+  right: -40px;
+}
+body .team .container .sliderWrapper .personalSlide .aboutPerson .position {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 300;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #81868e;
+  margin-bottom: 20px;
+}
+body .team .container .sliderWrapper .personalSlide .aboutPerson .skilsWrapper {
+  width: 80%;
+  margin-left: 20%;
+  padding-top: 30px;
+}
+body .team .container .sliderWrapper .personalSlide .aboutPerson .skilsWrapper .skill {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #81868e;
+  margin-bottom: 35px;
+  position: relative;
+}
+body .team .container .sliderWrapper .personalSlide .aboutPerson .skilsWrapper .skill::before {
+  content: " ";
+  border-bottom: 4px solid #cfd3d4;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+}
+body .team .container .sliderWrapper .personalSlide .aboutPerson .skilsWrapper .skill::after {
+  content: " ";
+  border-bottom: 4px solid #19bd9a;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+}
+body .team .container .sliderWrapper .personalSlide .aboutPerson .skilsWrapper .skill:nth-child(1):after {
+  width: 80%;
+}
+body .team .container .sliderWrapper .personalSlide .aboutPerson .skilsWrapper .skill:nth-child(2):after {
+  width: 65%;
+}
+body .team .container .sliderWrapper .personalSlide .aboutPerson .skilsWrapper .skill:nth-child(3):after {
+  width: 70%;
+}
+body .team .container .sliderNavigation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+body .team .container .sliderNavigation .point {
+  border: 1px solid #19bd9a;
+  border-radius: 50%;
+  padding: 4px;
+  margin: 0 5px;
+}
+body .team .footerTeam {
+  width: 100%;
+  background: url(../img/bg_contactUs.jpg) no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+  text-align: center;
+}
+body .team .footerTeam p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  margin-bottom: 30px;
 }
