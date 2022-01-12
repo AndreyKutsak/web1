@@ -285,6 +285,79 @@ img {
   padding: 0 10px;
   margin: 0 auto;
 }
+.price {
+  padding: 80px 0 80px;
+  background-color: #f3f3f3;
+}
+.price .main-head {
+  text-align: center;
+  color: #333b46;
+  margin-bottom: 40px;
+}
+.price .main-desc-14px {
+  text-align: center;
+  color: #81868e;
+  max-width: 465px;
+  margin: 0 auto 30px;
+}
+.price .fx-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 920px;
+  margin: 0 auto;
+}
+.price .fx-container .block {
+  width: 235px;
+  margin: 20px 35px;
+  background-color: #fff;
+}
+.price .fx-container .block .price-advantages {
+  padding: 27px 0 0 35px;
+}
+.price .fx-container .block .price-advantages li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #81868e;
+  padding: 10px 0;
+}
+.price .fx-container .block .block-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  padding: 25px 10px;
+  background-color: #19bd9a;
+  width: 100%;
+}
+.price .fx-container .block .price-desc {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 42px;
+  font-weight: bold;
+  color: #1fbba6;
+  margin: 70px 0 10px;
+  text-align: center;
+}
+.price .fx-container .block .subsc-dur {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: #81868e;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 90px;
+}
+.price .fx-container .block .order-btn {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #fff;
+  padding: 25px 10px 29px;
+  background-color: #19bd9a;
+}
 .subscribe {
   padding: 85px 0 100px;
   background-image: url(../img/bg_Subscribe_us.jpg);
