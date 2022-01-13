@@ -544,7 +544,7 @@
             blanditiis praesentium
           </p>
           <div class="sliderWrapper">
-            <div class="personalSlide slide1" onclick="stopSlider()">
+            <div id="slide1" class="personalSlide" onclick="stopSlider()">
               <img src="img/AbdullahNoman.jpg" alt="Abdullah_Noman" />
               <div class="aboutPerson">
                 <h3>Abdullah Noman</h3>
@@ -560,7 +560,7 @@
                 </div>
               </div>
             </div>
-            <div class="personalSlide slide2" onclick="stopSlider()">
+            <div id="slide2" class="personalSlide" onclick="stopSlider()">
               <img src="img/portfolio/10.jpg" alt="Abdullah_Noman" />
               <div class="aboutPerson">
                 <h3>Lorem ipsum dolor sit.</h3>
@@ -576,7 +576,7 @@
                 </div>
               </div>
             </div>
-            <div class="personalSlide slide3" onclick="stopSlider()">
+            <div id="slide3" class="personalSlide" onclick="stopSlider()">
               <img src="img/portfolio/5.jpg" alt="Abdullah_Noman" />
               <div class="aboutPerson">
                 <h3>Lorem ipsum dolor.</h3>
@@ -594,21 +594,9 @@
             </div>
           </div>
           <div class="sliderNavigation">
-            <div
-              id="slide1"
-              class="point"
-              onclick="changeSlide('slide1')"
-            ></div>
-            <div
-              id="slide2"
-              class="point"
-              onclick="changeSlide('slide2')"
-            ></div>
-            <div
-              id="slide3"
-              class="point"
-              onclick="changeSlide('slide3')"
-            ></div>
+            <div class="point" onclick="changeSlide('slide1')"></div>
+            <div class="point" onclick="changeSlide('slide2')"></div>
+            <div class="point" onclick="changeSlide('slide3')"></div>
           </div>
         </div>
         <div class="footerTeam">
@@ -640,17 +628,15 @@
       }
 
       // slider
+      let slides = document.getElementsByClassName("personalSlide");
+      let points = document.getElementsByClassName("point");
       let slideIndex = 1;
       showSlides(slideIndex);
 
       function showSlides(n) {
-        let slides = document.getElementsByClassName("personalSlide");
         if (n > slides.length) {
           slideIndex = 1;
         }
-        let currentPoint;
-        let points = document.getElementsByClassName("point");
-
         for (let slide of slides) {
           slide.style.display = "none";
         }
@@ -658,8 +644,7 @@
           point.style.background = "white";
         }
         slides[slideIndex - 1].style.display = "flex";
-        currentPoint = document.getElementById("slide" + slideIndex);
-        currentPoint.style.background = "#19bd9a";
+        points[slideIndex - 1].style.background = "#19bd9a";
       }
 
       let timer = setInterval(function () {
@@ -670,11 +655,19 @@
       function stopSlider() {
         clearInterval(timer);
       }
-      function changeSlide(cls) {
+
+      function changeSlide(id) {
         stopSlider();
-        let selectedSlide = document.getElementsByClassName(cls);
-        // selectedSlide.style.display = "flex";
-        // console.log(selectedSlide);
+        let selectedSlide = document.getElementById(id);
+        
+        for (let slide of slides) {
+          slide.style.display = "none";
+        }
+        for (let point of points) {
+          point.style.background = "white";
+        }
+        selectedSlide.style.display = "flex";
+        points[id[5]-1].style.background = "#19bd9a";
       }
     </script>
   </body>

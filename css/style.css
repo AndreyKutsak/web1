@@ -924,7 +924,7 @@ body .team .container {
   text-align: center;
 }
 body .team .container .team-desc {
-  width: 40%;
+  max-width: 450px;
   margin: 0 auto;
 }
 body .team .container .sliderWrapper {
@@ -934,7 +934,6 @@ body .team .container .sliderWrapper {
   align-items: center;
 }
 body .team .container .sliderWrapper .personalSlide {
-  display: flex;
   justify-content: space-between;
   padding: 60px 40px;
   display: none;
