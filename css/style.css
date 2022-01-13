@@ -269,12 +269,6 @@
   width: 29px;
   height: 29px;
 }
-.icon:hover {
-  background: #19bd9a;
-}
-.icon:focus {
-  background: #19bd9a;
-}
 .btn a {
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
@@ -443,6 +437,9 @@ body .details .container .detailsContent .iconsBlock {
 body .details .container .detailsContent .iconsBlock .icon {
   margin: 0px 15px;
 }
+body .details .container .detailsContent .iconsBlock .icon:hover {
+  background: #19bd9a;
+}
 body .details .container .creativeIdeas h3 {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
@@ -591,12 +588,15 @@ body .ourServices .container .servicesList .servicesIcons {
 body .ourServices .container .servicesList .servicesIcons .icon {
   margin-bottom: 20px;
 }
+body .ourServices .container .servicesList .servicesIcons .icon:nth-child(1) {
+  background: #19bd9a;
+}
 body .ourServices .container .servicesList .serviceListContent {
   flex-basis: 35%;
   width: 750px;
   position: relative;
 }
-body .ourServices .container .servicesList .serviceListContent .serviceListElement {
+body .ourServices .container .servicesList .serviceListContent .serviceElement {
   position: absolute;
   top: 0;
   left: 0;
@@ -605,11 +605,10 @@ body .ourServices .container .servicesList .serviceListContent .serviceListEleme
   transition: 0.3s;
   pointer-events: none;
 }
-body .ourServices .container .servicesList .serviceListContent .serviceListElement:target {
+body .ourServices .container .servicesList .serviceListContent .serviceElement:nth-child(1) {
   opacity: 1;
-  pointer-events: auto;
 }
-body .ourServices .container .servicesList .serviceListContent .serviceListElement h3 {
+body .ourServices .container .servicesList .serviceListContent .serviceElement h3 {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -617,18 +616,18 @@ body .ourServices .container .servicesList .serviceListContent .serviceListEleme
   color: #464646;
   margin-bottom: 30px;
 }
-body .ourServices .container .servicesList .serviceListContent .serviceListElement .main-desc-16px {
+body .ourServices .container .servicesList .serviceListContent .serviceElement .main-desc-16px {
   padding-bottom: 35px;
 }
-body .ourServices .container .servicesList .serviceListContent .serviceListElement .main-desc-16px span:nth-child(1) {
+body .ourServices .container .servicesList .serviceListContent .serviceElement .main-desc-16px span:nth-child(1) {
   color: #19bd9a;
   font-weight: 700;
 }
-body .ourServices .container .servicesList .serviceListContent .serviceListElement .main-desc-16px span:nth-child(2) {
+body .ourServices .container .servicesList .serviceListContent .serviceElement .main-desc-16px span:nth-child(2) {
   color: #636971;
   font-weight: 700;
 }
-body .ourServices .container .servicesList .serviceListContent .serviceListElement .main-desc-14px span {
+body .ourServices .container .servicesList .serviceListContent .serviceElement .main-desc-14px span {
   color: #19bd9a;
   font-weight: 700;
 }

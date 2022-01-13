@@ -56,12 +56,6 @@
       height: 29px;
     }
   }
-  &:hover {
-    background: @green200;
-  }
-  &:focus {
-    background: @green200;
-  }
 }
 .btn {
   a {
@@ -231,6 +225,9 @@ body {
             justify-content: center;
             .icon {
               margin: 0px 15px;
+              &:hover {
+                background: @green200;
+              }
             }
           }
         }
@@ -389,13 +386,16 @@ body {
               align-items: center;
               .icon {
                 margin-bottom: 20px;
+                &:nth-child(1) {
+                  background: @green200;
+                }
               }
             }
             .serviceListContent {
               flex-basis: 35%;
               width: 750px;
               position: relative;
-              .serviceListElement {
+              .serviceElement {
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -403,9 +403,8 @@ body {
                 opacity: 0;
                 transition: 0.3s;
                 pointer-events: none;
-                &:target {
+                &:nth-child(1) {
                   opacity: 1;
-                  pointer-events: auto;
                 }
                 h3 {
                   font-family: @openSans;
