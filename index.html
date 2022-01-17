@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"/>
     <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Bouncy creative web agency</title>
   </head>
   <body>
@@ -14,7 +15,7 @@
         <div class="container">
           <div class="nav">
             <a class="logo" href="#">Bouncy</a>
-            <ul class="menu">
+            <ul id="mainMenu" class="menu">
               <li><a href="#hello">Hello</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#services">Services</a></li>
@@ -23,6 +24,7 @@
               <li><a href="#">Blog</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
+            <i id="responsiveMenu" class="material-icons responsiveMenu" onclick="showMenu()">menu</i>
           </div>
           <div class="headerContent">
             <h1>We Are Code Cafe</h1>
@@ -545,6 +547,12 @@
     
     <script src="js/app.js"></script>
     <script>
+      // Menu
+      function showMenu() {
+        document.getElementById("mainMenu").classList.toggle("show");
+        document.getElementById("responsiveMenu").classList.toggle("active");
+      }
+
       // navigation "OUR SERVICES" 
       function showService(id) {
         let serviceList = document.getElementsByClassName("serviceElement");

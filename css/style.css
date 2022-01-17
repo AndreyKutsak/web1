@@ -309,6 +309,8 @@ body header .container .nav {
   justify-content: space-between;
 }
 body header .container .nav .logo {
+  flex-basis: 30%;
+  text-align: left;
   text-decoration: none;
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
@@ -341,6 +343,19 @@ body header .container .nav .menu li a {
 }
 body header .container .nav .menu li a:hover {
   border: 1px solid #ffffff;
+}
+body header .container .nav .responsiveMenu {
+  display: none;
+  flex-basis: 20%;
+  font-size: 35px;
+  color: #ffffff;
+  line-height: 0.7;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.5s;
+}
+body header .container .nav .active {
+  color: rgba(255, 255, 255, 0.7);
 }
 body header .container .headerContent {
   max-width: 600px;
@@ -383,7 +398,7 @@ body .aboutUs {
 }
 body .aboutUs .container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
 }
 body .aboutUs .container .aboutUsContent {
@@ -447,7 +462,7 @@ body .details .container h3 {
 }
 body .details .container .creativeIdeasContent {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding: 0 40px;
 }
 body .details .container .creativeIdeasContent .main-desc-16px {
@@ -533,7 +548,7 @@ body .projects .projectsImages .imgBlock .title {
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.7);
   z-index: 9;
   transition: 1s;
 }
@@ -554,7 +569,7 @@ body .projects .projectsFooter .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 20px;
+  padding: 30px;
 }
 body .projects .projectsFooter .container p {
   font-family: "Open Sans";
@@ -563,14 +578,13 @@ body .projects .projectsFooter .container p {
   font-weight: 400;
   letter-spacing: 0.04em;
   color: #ffffff;
-  padding: 30px;
+  padding: 20px;
 }
 body .projects .projectsFooter .container p span {
   font-weight: 700;
 }
 body .projects .projectsFooter .container .btn {
   align-self: center;
-  margin: 0 auto;
 }
 body .ourServices {
   background: #f3f3f3;
@@ -588,7 +602,7 @@ body .ourServices .container .ourServices-desc {
 }
 body .ourServices .container .servicesContent {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   padding: 0 30px;
   width: 100%;
@@ -656,6 +670,7 @@ body .ourServices .container .servicesContent .servicesChart {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 0 10px;
 }
 body .ourServices .container .servicesContent .servicesChart .chartElement {
   display: flex;
@@ -717,13 +732,11 @@ body .impressed {
   background-position: center;
 }
 body .impressed .container {
-  display: flex;
-  justify-content: space-between;
   position: relative;
 }
 body .impressed .container .impressedContent {
-  flex-basis: 600px;
-  padding: 80px 0 100px;
+  width: 55%;
+  padding: 80px 20px 100px;
 }
 body .impressed .container .impressedContent .main-head {
   color: #f3f3f3;
@@ -743,10 +756,9 @@ body .impressed .container .impressedContent .main-desc-16px {
   margin-bottom: 35px;
 }
 body .impressed .container .impressedImg {
-  flex-basis: 400px;
   position: absolute;
   top: -40px;
-  right: 0;
+  right: 20px;
 }
 body .impressed .container .impressedImg img {
   position: relative;
@@ -956,16 +968,16 @@ body .team .container .sliderWrapper {
 }
 body .team .container .sliderWrapper .personalSlide {
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding: 60px 40px;
   display: none;
 }
 body .team .container .sliderWrapper .personalSlide img {
-  max-width: 300px;
-  height: auto;
+  width: auto;
+  height: 100%;
 }
 body .team .container .sliderWrapper .personalSlide .aboutPerson {
-  flex-basis: 450px;
+  flex-basis: 500px;
   padding: 20px 40px 0px;
   text-align: right;
 }
@@ -1065,4 +1077,258 @@ body .team .footerTeam p {
   letter-spacing: 0.04em;
   color: #ffffff;
   margin-bottom: 30px;
+}
+@media (max-width: 970px) {
+  body header .container .nav .logo {
+    text-align: center;
+  }
+  body header .container .nav .menu {
+    flex-direction: column;
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.5s;
+  }
+  body header .container .nav .menu li {
+    margin-bottom: 15px;
+    text-align: right;
+    letter-spacing: 0.1em;
+  }
+  body header .container .nav .show {
+    opacity: 1;
+    pointer-events: auto;
+    transition: 0.5s;
+  }
+  body header .container .nav .responsiveMenu {
+    display: block;
+  }
+  body header .container .headerContent {
+    padding: 70px 0;
+  }
+  body .aboutUs {
+    padding: 50px 0;
+  }
+  body .details {
+    padding: 50px 0;
+  }
+  body .details .container .iconsBlock {
+    padding: 30px 0;
+  }
+  body .details .container .iconsBlock .icon {
+    width: 36px;
+    height: 36px;
+    padding: 7.5px 0;
+  }
+  body .details .container .iconsBlock .icon a {
+    padding: 7.5px;
+  }
+  body .details .container .iconsBlock .icon a svg {
+    width: 22px;
+    height: 22px;
+  }
+  body .projects .container {
+    padding: 50px 0;
+  }
+  body .projects .projectsFooter .container {
+    justify-content: center;
+  }
+  body .ourServices {
+    padding: 50px 0;
+  }
+  body .ourServices .container .ourServices-desc {
+    margin-bottom: 30px;
+  }
+  body .ourServices .container .servicesContent {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+  body .ourServices .container .servicesContent .servicesList {
+    order: 2;
+  }
+  body .ourServices .container .servicesContent .servicesChart {
+    order: 1;
+    padding-bottom: 50px;
+  }
+  body .impressed .container .impressedContent {
+    width: 50%;
+    padding: 50px 20px;
+  }
+  body .impressed .container .impressedContent .main-desc-16px {
+    font-size: 14px;
+  }
+  body .impressed .container .impressedImg {
+    max-width: 370px;
+  }
+  body .portfolio {
+    padding: 70px 0;
+  }
+  body .portfolio .container .main-desc-14px {
+    margin-bottom: 30px;
+  }
+  body .portfolio .container .filter {
+    margin-bottom: 30px;
+  }
+  body .portfolio .container .allWorks .portfolioImg {
+    width: 32%;
+  }
+  body .portfolio .container .allWorks .portfolioImg .onHover {
+    padding: 0 20px;
+  }
+  body .team {
+    padding-top: 70px;
+  }
+  body .team .container .sliderWrapper .personalSlide {
+    padding: 20px;
+  }
+  body .team .container .sliderNavigation {
+    margin-bottom: 70px;
+  }
+}
+@media (max-width: 767px) {
+  body header .container .headerContent {
+    padding: 50px 0;
+  }
+  body header .container .headerContent h1 {
+    font-size: 30px;
+  }
+  body .aboutUs .container {
+    flex-wrap: wrap;
+  }
+  body .aboutUs .container .aboutUsContent {
+    padding: 20px;
+  }
+  body .aboutUs .container .aboutUsContent .main-head {
+    text-align: center;
+  }
+  body .aboutUs .container .aboutUsContent .btn {
+    padding: 30px 0 0px;
+  }
+  body .details .container .creativeIdeasContent {
+    flex-wrap: wrap;
+  }
+  body .details .container .creativeIdeasContent .main-desc-14px {
+    flex-basis: 100%;
+  }
+  body .details .container .creativeIdeasContent .main-desc-16px {
+    flex-basis: 100%;
+    padding-bottom: 20px;
+  }
+  body .projects .container {
+    padding: 50px 0 30px;
+  }
+  body .projects .projectsImages {
+    flex-direction: column;
+  }
+  body .projects .projectsImages .imgBlock {
+    margin: 10px 20px;
+  }
+  body .projects .projectsImages .imgBlock:hover {
+    transform: scale(1.05);
+    z-index: 10;
+  }
+  body .projects .projectsFooter .container {
+    padding: 20px 0px 40px;
+  }
+  body .projects .projectsFooter .container p {
+    font-size: 18px;
+  }
+  body .impressed .container .impressedContent {
+    width: 100%;
+    padding: 50px;
+  }
+  body .impressed .container .impressedImg {
+    display: none;
+  }
+  body .portfolio {
+    padding: 50px 0;
+  }
+  body .portfolio .container .filter button {
+    font-size: 14px;
+    margin: 10px;
+  }
+  body .portfolio .container .allWorks .portfolioImg {
+    width: 49%;
+  }
+  body .portfolio .container .footerPortfolio {
+    padding: 40px 0px;
+  }
+  body .portfolio .container .footerPortfolio p {
+    font-size: 18px;
+    padding: 0 20px;
+  }
+  body .team {
+    padding-top: 50px;
+  }
+  body .team .container .sliderWrapper .personalSlide {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  body .team .container .sliderWrapper .personalSlide .aboutPerson {
+    flex-basis: 80%;
+    padding-top: 30px;
+  }
+  body .team .container .sliderWrapper .personalSlide .aboutPerson .skilsWrapper {
+    width: 100%;
+    margin: 0;
+  }
+  body .team .container .sliderNavigation {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 576px) {
+  body .aboutUs {
+    padding: 30px 0;
+  }
+  body .ourServices .container .servicesContent .servicesChart .chartElement .percent {
+    width: 98px;
+    height: 98px;
+  }
+  body .ourServices .container .servicesContent .servicesChart .chartElement .ellipse {
+    top: -1px;
+    left: -1px;
+    width: 100px;
+  }
+  body .ourServices .container .servicesContent .servicesChart .chartElement .ellipse img {
+    width: 100px;
+  }
+  body .portfolio .container .filter {
+    width: 80%;
+    text-align: center;
+  }
+  body .portfolio .container .filter button {
+    margin: 15px;
+  }
+  body .portfolio .container .footerPortfolio {
+    padding: 40px 0;
+  }
+  body .portfolio .container .footerPortfolio p {
+    font-size: 18px;
+  }
+  body .team .container .sliderWrapper .personalSlide .aboutPerson {
+    flex-basis: 100%;
+  }
+  body .team .footerTeam {
+    padding: 40px 0;
+  }
+}
+@media (max-width: 470px) {
+  body header {
+    padding: 50px 0;
+  }
+  body header .container .headerContent {
+    padding: 20px 0 30px;
+  }
+  body header .container .headerContent h1 {
+    font-size: 25px;
+  }
+  body header .container .headerContent .main-desc-16px {
+    font-size: 14px;
+  }
+  body .ourServices .container .servicesContent .servicesList .main-desc-16px {
+    font-size: 14px;
+  }
+  body .portfolio .container .filter {
+    width: 100%;
+  }
 }
