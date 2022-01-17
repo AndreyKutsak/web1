@@ -354,6 +354,9 @@ body header .container .nav .responsiveMenu {
   cursor: pointer;
   transition: 0.5s;
 }
+body header .container .nav .responsiveMenu:hover {
+  transform: scale(1.1);
+}
 body header .container .nav .active {
   color: rgba(255, 255, 255, 0.7);
 }
